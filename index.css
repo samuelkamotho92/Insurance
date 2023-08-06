@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main_content{
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+.home_page{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('.//images/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.logo h2{
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;  
+}
+.links ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+.links ul li{
+    margin: auto 5px;
+    color: white;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 5px;
+}
+.profile ul{
+    list-style: none;
+    margin: auto 10px;
+}
+.profile ul li{
+    color: white;
+
+}
+.profile button{
+    background-color: rgb(56, 152, 226);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.motto h3{
+color: white;
+font-weight: bolder;
+font-size: 36px;
+letter-spacing: 0.2px;
+word-spacing: 2px;
+margin: 20px auto;
+}
+.mission p{
+    color: white;
+    margin: 20px auto;
+}
+.easy_links{
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+}
+.easy_links button{
+    background-color: rgb(56, 152, 226);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto 20px;
+}
+.about_page{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-content: center;
+align-items: center;
+gap: 40px;
+margin:auto 10%;
+background-color:rgb(211, 203, 203);
+}
+.about_page :nth-child(3){
+    background-color: rgb(56, 152, 226);
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-top: -75px;
+    background-color: white;
+    height: 150px;
+    padding: 5px;
+
+}
+.about span{
+    color:  rgb(56, 152, 226);
+}
+.about h5{
+    font-weight: bolder;
+    font-size: 24px;
+}
+.about .text{
+    background-color: transparent;
+}
+.about_details{
+background-color: white;
+display: grid;
+grid-template-columns: repeat(3,1fr);
+justify-content: center;
+align-items: center;
+gap: 40px;
+margin:150px 10%;
+}
+.aboutdt{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    height: 150px;
+    padding: 5px;
+}
+.aboutdt span{
+    color:  rgb(56, 152, 226);;
+}
+.testimonials{
+    background-color: rgb(255, 250, 250);
+    height: 100%;
+}
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.industry{
+margin: 100px;
+}
+.industry h3{
+text-align: center;
+}
+.testimony{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.testimony .person{
+    height: 400px;
+    background-color: white;
+}
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: auto 10%;
+    box-shadow: 10px 10px 5px 0px rgba(227,216,216,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(227,216,216,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(227,216,216,0.75);
+}
+.person img{
+    border-radius: 50%;
+    height: 35%;
+}
