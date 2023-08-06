@@ -145,7 +145,7 @@ margin:150px 10%;
     padding: 5px;
 }
 .aboutdt span{
-    color:  rgb(56, 152, 226);;
+    color:  rgb(56, 152, 226);
 }
 .testimonials{
     background-color: rgb(255, 250, 250);
@@ -188,4 +188,173 @@ text-align: center;
 .person img{
     border-radius: 50%;
     height: 35%;
+}
+.reviews{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reviews .checked{
+    color: orange;
+}
+.sponsors{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin:150px 10%;
+}
+.sponsors img{
+    height: 50px;
+    width: 75px;
+}
+.subscription{
+    background-image: linear-gradient(to right, indigo, rgb(180, 42, 152));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px;
+    width: 80%;
+    margin-bottom:10px;
+}
+.content{
+    flex: 1;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 20px;
+    width: 50%;
+}
+.content p{
+    font-size: 24px;
+    font-weight: bolder;
+    color: white;
+
+}
+.input input{
+    padding: 20px;
+    width: 100%;
+    font-size: bolder;
+}
+.input button{
+padding: 20px;
+    position: absolute;
+    right: 0;
+    background-color:  rgb(56, 152, 226);
+}
+.pricing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 300px;
+}
+.packages{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    gap: 30px;
+    margin: 50px auto;
+}
+.package{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70vh;
+    padding: 20px;
+}
+.package p {
+    color: black;
+    background-color: transparent;
+}
+.packages :nth-child(2){
+    background-color: darkblue;
+}
+.package button{
+    padding: 10px;
+    background-color:  rgb(56, 152, 226);
+}
+.locations{
+display: flex;
+align-items: flex-start;
+justify-content:center;
+background-color: rgb(2, 2, 62);
+height: 80vh;
+width: 100vw;
+padding: 50px;
+}
+.cont{
+    margin: 20px 50px;
+}
+.cont h2{
+    font-weight: bolder;
+    font-size: 32px;
+    color: white;
+    margin-bottom: 10px;
+}
+.locations img{
+height: 100px;
+width: 100px;
+}
+.contact{
+    display: flex;
+    align-items:center;
+   justify-content: center;
+   margin-top: -200px;
+   height: 400px;
+   margin: auto 20%;
+   padding: 5px;
+
+}
+
+.contact image{ 
+    flex: 1;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('./images/contact.png'); */
+ }
+.contact .form_details{
+    flex: 2;
+}
+.form_details h1{
+    align-items: center;
+}
+.form_details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+.agency{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto 10%;
+    padding: 20px;
+}
+.footer .navig p{
+    text-align: center;
+}
+.navig ul{
+    text-decoration: none;
+    list-style: none;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: lightgray,
 }
