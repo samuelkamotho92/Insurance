@@ -308,28 +308,54 @@ width: 100px;
     display: flex;
     align-items:center;
    justify-content: center;
-   margin-top: -200px;
    height: 400px;
-   margin: auto 20%;
+   margin-left: 20%;
+   margin-right: 20%;
+   margin-top: -200px;
    padding: 5px;
-
+background-color: white;
+position: relative;
 }
+
 
 .contact image{ 
     flex: 1;
+    height: 100%;
+    width: 100%;
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('./images/contact.png'); */
+ }
+ .contact image img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: left;
+    object-fit: cover;
+    background-size: cover;
+    
  }
 .contact .form_details{
     flex: 2;
 }
 .form_details h1{
-    align-items: center;
+    position: absolute;
+    top: 0;
+    text-align: center;
 }
 .form_details {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content:space-between;
+}
+.form_details div{
+    display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-between;
+}
+.form_details button{
+    width: 50%;
+    background-color: rgb(56, 152, 226);
 }
 .agency{
     display: flex;
