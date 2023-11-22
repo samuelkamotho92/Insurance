@@ -108,20 +108,9 @@ margin: 1.25rem auto;
    align-items: center;
    justify-content: center;
 }
-/* .easy_links button{
-    background-color: rgb(56, 152, 226);
-    color: white;
-    padding: 0.625rem;
-    text-align: center;
-    border-radius: 0.625rem;
-    margin: auto 1.25rem;
-    cursor: pointer;
-} */
 .easy_links button{
     width: 8.5rem;
 }
-
-
 .easy_links :nth-child(1){
     background-color: rgb(56, 152, 226);
     color: white;
@@ -386,15 +375,6 @@ padding: 1.1rem;
     width: 100vw;
 padding: 3.125rem;
 margin-top: 15rem;
-/* display: flex;
-align-items: flex-start;
-justify-content:center;
-
-
-width: 100vw;
-padding: 3.125rem;
-
-*/
 }
 .cont{
     margin: 1.25rem 3.125rem;
@@ -447,7 +427,6 @@ box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
     object-fit: cover;
     background-size: cover;
     height: 100%;
-    
  }
 .contact .form_details{
     flex: 2;
@@ -557,7 +536,6 @@ box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
 }
 .motto h3{
    text-align: center;
-
 }
 .menu{
 display: flex;
@@ -574,6 +552,77 @@ margin: auto 10%;
     font-size: 24px;
     font-weight:bolder;
  }
+
+ .footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto 10%;
+    padding: 1.25rem;
+}
+.footer :nth-child(5){
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+    margin-left:65%;
+}
+.about{
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+}
+
+@media only screen  and (max-width:700px){
+    .about_page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about{
+        height: 250px;
+        margin: 5px auto;
+    }
+    .testimony{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .person img{
+        width: 100px;
+        height: 100px;
+    }
+    .sponsors{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .packages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width:1235px){
+    .package{
+        height: 60vh;
+    }
+    .packages :nth-child(2){
+        height: 65vh;
+        padding: 20px auto;
+        padding-top: 30px;
+    }
+    .person img{
+        margin: 20px;
+        border-radius: 50%;
+        height: 50%;
+        width: 35%;
+    }
 }
 @media only screen and (max-width :600px){
 .person{
@@ -622,6 +671,13 @@ margin: auto 10%;
     font-size: 24px;
     font-weight:bolder;
  }
+.about_page{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
 }
 @media only screen and (max-width:500px){
     .motto h3{
@@ -640,7 +696,7 @@ font-weight: medium;
         margin-top: -4.6875rem;
         background-color: white;
         height: 12rem;
-        padding: 0.312rem;
+        padding: 1rem;
     }
   
 }
@@ -657,7 +713,6 @@ font-weight: medium;
         align-items: center;
         justify-content: space-around;
         flex-direction: column;
-        /* margin: auto 10%; */
         width: 50vw;
         box-shadow: 0.625rem 0.625rem 5px 0px rgba(227,216,216,0.75);
     -webkit-box-shadow: 0.625rem 0.625rem 5px 0px rgba(227,216,216,0.75);
@@ -686,6 +741,7 @@ font-weight: medium;
 
 
 
+
     .subscription {
         background-image: linear-gradient(to right, indigo, rgb(180, 42, 152));
         display: flex;
@@ -701,12 +757,8 @@ font-weight: medium;
 .locations{
     margin-top: 50rem;
 }
-    /* .contact{
-height: 12.5rem;
-    } */
     .contact .image{ 
         display: none;
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('./images/contact.png'); */
      }
      .footer .navig p{
         font-size: 24px;
@@ -720,13 +772,34 @@ height: 12.5rem;
     margin: auto 10%;
     }
 }
+
+@media only screen and (max-width:1100px){
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+       justify-content: center;
+       height: 30rem;
+       margin-left: 20%;
+       margin-right: 20%;
+       margin-top: -12.5rem;
+       margin-bottom: 3.5rem;
+       padding: 0.3125rem;
+    background-color: white;
+    box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
+    -webkit-box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
+    -moz-box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
+    }
+    .contact .image{ 
+        visibility: hidden;
+     }
+}
+
 .package div{
     width: 100%;
 }
-
 .package div :nth-child(2){
     background-color:transparent;
     font-weight: 100;
     font-size: 18px;
-    /* font-size: 24px; */
 }
