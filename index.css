@@ -323,34 +323,39 @@ padding: 1.1rem;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-top: 18.75rem;
+    margin-top: 22.75rem;
 }
 .pricing h3{
     font-size: 36px;
     font-weight: 500px;
     margin: 20px auto;
-
 }
 .packages{
     display: grid;
-    grid-template-columns:repeat(3,1fr) ;
-    margin: 3.5rem auto;
+    grid-template-columns:repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 50px;
 }
 .packages :nth-child(1){
- margin-top: 25px;
+    /* margin-top: 25px; */
+}
+.package :nth-child(1) button{
+    margin-top: 20px;
 }
 .packages :nth-child(2){
     height: 85vh;
     padding: 20px auto;
+    padding-top: 30px;
 }
 .packages :nth-child(3){
-margin-top: 25px;
+/* margin-top: 25px; */
 }
 .package{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 80vh;
     padding: 1.25rem;
     border-radius: 10px;
@@ -359,6 +364,10 @@ margin-top: 25px;
 .package p {
     color: black;
     background-color: transparent;
+}
+.package span{
+    font-weight: bolder;
+    font-size: 32px;
 }
 .packages :nth-child(2){
     background-color: rgba(2, 2, 43, 0.922);
@@ -370,13 +379,13 @@ margin-top: 25px;
 }
 .locations{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     height: 80vh;
     background-color: rgb(2, 2, 62);
     width: 100vw;
 padding: 3.125rem;
-margin-top: 2.4rem;
+margin-top: 15rem;
 /* display: flex;
 align-items: flex-start;
 justify-content:center;
@@ -404,21 +413,31 @@ width: 100px;
     display: flex;
     align-items:center;
    justify-content: center;
-   height: 25rem;
+   height: 30rem;
    margin-left: 20%;
    margin-right: 20%;
    margin-top: -12.5rem;
    padding: 0.3125rem;
 background-color: white;
 position: relative;
+box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
+-webkit-box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
+-moz-box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
 }
-
-
+.optionsValues{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.optionsValues select{
+    width: 100%;
+    height: 40px;
+}
 .contact .image{ 
     flex: 1;
     height: 100%;
     width: 100%;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,url('./images/contact.png'); */
  }
  .contact .image img{
     position: absolute;
@@ -427,6 +446,7 @@ position: relative;
     background-position: left;
     object-fit: cover;
     background-size: cover;
+    height: 100%;
     
  }
 .contact .form_details{
@@ -443,11 +463,11 @@ position: relative;
     align-items: center;
     justify-content:start;
     width: 80%;
-
 }
 
 .form_details div{
     width:100%;
+    margin: 10px auto;
 }
 .form_details input  {
     width: 100%;
@@ -458,6 +478,7 @@ position: relative;
     background-color: rgb(56, 152, 226);
     margin: 10px 10%;
     padding: 10px;
+    border: none;
 }
 .agency{
     display: flex;
@@ -467,13 +488,16 @@ position: relative;
     margin:20px auto;
 }
 .agency p{
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bolder;
 }
 .agency button{
-    padding: 1.25rem;
+    padding: 1.1rem;
     background-color:  rgb(56, 152, 226);
-    border-radius: 1.25rem;
+    border-radius: 1rem;
+    width: 250px;
+    border: none;
+    cursor: pointer;
 }
 .footer{
     display: grid;
@@ -483,12 +507,31 @@ position: relative;
     margin: auto 10%;
     padding: 1.25rem;
 }
+.footer .navig{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .navig ul{
+    margin-top: 0.65rem;
+}
+
 .footer .navig p{
     text-align: center;
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 .navig ul{
     text-decoration: none;
     list-style: none;
+}
+.navig ul li{
+    display: flex;
+     align-items: center;
+     gap: 10px;
+    color: rgb(86, 83, 83);
+    margin: 5px auto;
 }
 .copyright{
     display: flex;
@@ -496,6 +539,10 @@ position: relative;
     justify-content: space-around;
     background-color: lightgray,
 }
+.copyright .icons i{
+    color:  rgb(56, 152, 226);
+}
+
 @media only screen and (max-width: 768px) {
 .links{
     display: none;
@@ -636,6 +683,9 @@ font-weight: medium;
 -webkit-box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
 -moz-box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
     }
+
+
+
     .subscription {
         background-image: linear-gradient(to right, indigo, rgb(180, 42, 152));
         display: flex;
@@ -669,4 +719,14 @@ height: 12.5rem;
     align-items: center;
     margin: auto 10%;
     }
+}
+.package div{
+    width: 100%;
+}
+
+.package div :nth-child(2){
+    background-color:transparent;
+    font-weight: 100;
+    font-size: 18px;
+    /* font-size: 24px; */
 }
