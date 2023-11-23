@@ -541,6 +541,7 @@ box-shadow: 1px 10px 14px 0px rgba(115,108,108,0.75);
 display: flex;
 cursor: pointer;
 }
+
 .footer{
     display: grid;
 grid-template-columns: repeat(2,1fr);
@@ -704,7 +705,6 @@ font-weight: medium;
         padding: 1rem;
     }
     .subscription{
-        background-color: red;
         margin-bottom: 0px;
     }
     .pricing{
@@ -717,10 +717,12 @@ font-weight: medium;
     }
     .pricing .packages .package{
         height: 400px;
+        border: none;
     }
 
     .packages :nth-child(2){
         margin-top: 100px;
+        height: 300px;
     }
     .packages :nth-child(3){
         margin-top: 100px;
@@ -756,21 +758,21 @@ font-weight: medium;
         margin: 3.125rem auto;
         height: 100vh;
     }
+    .packages :nth-child(2){
+        height: 500px;
+    }
     .package{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        height: 25rem;
+        justify-content: center;
         border-radius: 0.625rem;
+        height: 500px;
+        padding: 5px;
         box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
 -webkit-box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
 -moz-box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
     }
-
-
-
-
     .subscription {
         background-image: linear-gradient(to right, indigo, rgb(180, 42, 152));
         display: flex;
@@ -800,6 +802,52 @@ font-weight: medium;
     align-items: center;
     margin: auto 10%;
     }
+}
+
+@media only screen and (max-width:480px){
+    .packages{
+        display: grid;
+        grid-template-columns:repeat(1,1fr) ;
+        justify-content: center;
+        align-items: center;
+        gap: 1.875rem;
+        margin: 3.125rem auto;
+        height: 100vh;
+    }
+    .packages :nth-child(2){
+        height: 700px;
+    }
+    .package{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.625rem;
+        height: 700px;
+        box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
+-webkit-box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
+-moz-box-shadow: 10px 10px 14px 5px rgba(0,0,0,0.39);
+    }
+.footer .navig p{
+    font-size: 24px;
+    font-weight:bolder;
+ }
+
+ .footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: flex-end;
+    align-items: center;
+    margin: auto 10%;
+    padding: 1.25rem;
+}
+.footer :nth-child(5){
+    display:flex ;
+    align-items: center;
+    justify-content: space-around;
+    margin-left:65%;
+}
+    
 }
 
 @media only screen and (max-width:1100px){
