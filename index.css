@@ -30,6 +30,52 @@ body{
 .menu{
     display: none;
 }
+.sidenavbar {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    z-index: 1;
+  }
+  .sidemenuToggle{
+    display: block;
+  }
+
+  .sidenav-list .dropdown li {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    list-style: none;
+  }
+    .sidenav-list{
+    flex-direction: column;
+  }
+  .sidenav-list .dropdown{
+    margin: 50px 5px;
+    padding: 5px;
+  }
+
+  .sideHeaders{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  .closebtn{
+    align-self: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .closemenu{
+    display: none;
+  }
+
 .logo h2{
     font-size: 2rem;
     font-weight: bolder;
@@ -173,6 +219,8 @@ margin:auto 10%;
     margin-left: 1rem;
     background-color: transparent;
 }
+
+
 .about_details{
 background-color: white;
 display: grid;

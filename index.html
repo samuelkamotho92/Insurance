@@ -40,8 +40,48 @@
               <span class="material-symbols-outlined"> arrow_forward </span>
             </button>
           </div>
-          <div class="menu" style="color: white">
+          <div
+            class="menu Navbar__Link Navbar__Link-toggle"
+            style="color: white"
+          >
             <span class="material-symbols-outlined"> menu </span>
+          </div>
+        </div>
+        <div class="sidenavbar">
+          <div class="sidenavbar-links">
+            <p
+              style="color: rgb(127, 126, 126); font-size: larger"
+              class="closebtn"
+            >
+              X
+            </p>
+            <ul class="sidenav-list">
+              <li
+                class="dropdown"
+                style="list-style: none; text-decoration: none"
+              >
+                <a href="#" class="sideHeaders">Home</a>
+              </li>
+              <li
+                class="dropdown"
+                style="list-style: none; text-decoration: none"
+              >
+                <a href="#" class="sideHeaders">Product</a>
+              </li>
+              <li
+                class="dropdown"
+                style="list-style: none; text-decoration: none"
+              >
+                <a href="#" class="sideHeaders">Pricing</a>
+              </li>
+              <li
+                class="dropdown"
+                style="list-style: none; text-decoration: none"
+              >
+                <a href="#" class="sideHeaders">Contact</a>
+              </li>
+            </ul>
+            <div class="sidenav-list"></div>
           </div>
         </div>
         <div class="banner">
@@ -592,5 +632,22 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      function showsidemenu(params) {
+        const sidemenu = document.querySelector(".sidenavbar");
+        sidemenu.classList.add("sidemenuToggle");
+      }
+      function closeSidebar(params) {
+        const closemenu = document.querySelector(".sidenavbar");
+        closemenu.classList.toggle("closemenu");
+        console.log("clicked");
+      }
+      document
+        .querySelector(".Navbar__Link-toggle")
+        .addEventListener("click", showsidemenu);
+      document
+        .querySelector(".closebtn")
+        .addEventListener("click", closeSidebar);
+    </script>
   </body>
 </html>
