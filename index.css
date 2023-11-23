@@ -333,7 +333,7 @@ padding: 1.1rem;
     margin-top: 20px;
 }
 .packages :nth-child(2){
-    height: 85vh;
+    height: 90vh;
     padding: 20px auto;
     padding-top: 30px;
 }
@@ -345,7 +345,7 @@ padding: 1.1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 85vh;
     padding: 1.25rem;
     border-radius: 10px;
     border: 1px solid blue;
@@ -606,6 +606,12 @@ margin: auto 10%;
         align-items: center;
         justify-content: center;
     }
+    .pricing{
+        height:100%;
+    }
+    .packages .package{
+        margin: 20px;
+    }
 }
 
 @media only screen and (min-width:1235px){
@@ -693,12 +699,35 @@ font-weight: medium;
         flex-direction: column;
         align-items:flex-start;
         justify-content: space-around;
-        margin-top: -4.6875rem;
         background-color: white;
         height: 12rem;
         padding: 1rem;
     }
-  
+    .subscription{
+        background-color: red;
+        margin-bottom: 0px;
+    }
+    .pricing{
+        margin-top: 0px; 
+        height: 1200px; 
+        margin-bottom: 100px;
+    }
+    .packages{
+     margin: 20px auto;
+    }
+    .pricing .packages .package{
+        height: 400px;
+    }
+
+    .packages :nth-child(2){
+        margin-top: 100px;
+    }
+    .packages :nth-child(3){
+        margin-top: 100px;
+    }
+    .locations{
+        margin-top: 50px;
+    }
 }
 @media only screen and (max-width:545px){
     .testimony{
