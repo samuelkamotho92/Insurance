@@ -374,9 +374,6 @@ padding: 1.1rem;
     align-items: center;
     margin: 7rem 50px;
 }
-.packages :nth-child(1){
-    /* margin-top: 25px; */
-}
 .package :nth-child(1) button{
     margin-top: 20px;
 }
@@ -384,9 +381,6 @@ padding: 1.1rem;
     height: 90vh;
     padding: 20px auto;
     padding-top: 30px;
-}
-.packages :nth-child(3){
-/* margin-top: 25px; */
 }
 .package{
     display: flex;
@@ -665,7 +659,7 @@ margin: auto 10%;
 
 @media only screen and (min-width:1235px){
     .package{
-        height: 60vh;
+        height: 65vh;
     }
     .packages :nth-child(2){
         height: 65vh;
@@ -764,7 +758,7 @@ font-weight: medium;
      margin: 20px auto;
     }
     .pricing .packages .package{
-        height: 400px;
+        height: 450px;
         border: none;
     }
 
@@ -774,9 +768,10 @@ font-weight: medium;
     }
     .packages :nth-child(3){
         margin-top: 100px;
+        margin-bottom: 550px;
     }
     .locations{
-        margin-top: 50px;
+        margin-top: 200px;
     }
 }
 @media only screen and (max-width:545px){
